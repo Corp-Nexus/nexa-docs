@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexa - Catálogo</title>
+  <meta name="description" content="Gerencie seu catálogo de produtos na plataforma Nexa para automatização do WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+</head>
+<body>
+  <div class="docs-container">
+    <!-- Sidebar Navigation -->
+   <nav class="sidebar">
+      <div class="sidebar-header">
+        <h1 class="sidebar-title">Documentação</h1>
+      </div>
+      <div class="sidebar-nav">
+        <div class="nav-section">
+          <div class="nav-section-title">Introdução</div>
+          <a href="../intro/index.html" class="nav-link">Visão Geral</a>
+          <a href="../intro/funcionalidades.html" class="nav-link">Funcionalidades</a>
+          <a href="../intro/planos.html" class="nav-link">Planos e limites</a>
+        </div>
+        <div class="nav-section">
+          <div class="nav-section-title">Guia do Usuário</div>
+          <a href="../guia/primeiros-passos.html" class="nav-link">Primeiros passos</a>
+        </div>
+        <div class="nav-section">
+          <div class="nav-section-title">Catálogo</div>
+          <a href="catalogo.html" class="nav-link active">Visão Geral</a>
+          <a href="acessar-catalogo.html" class="nav-link">Acessar seu catálogo</a>
+          <a href="criar-produto.html" class="nav-link">Criar um produto</a>
+          <a href="editar-produto.html" class="nav-link">Editar um produto</a>
+          <a href="excluir-produto.html" class="nav-link">Excluir um produto</a>
+
+        </div>
+        <div class="nav-section">
+          <div class="nav-section-title">Suporte</div>
+          <a href="../suporte/perguntas-e-respostas.html" class="nav-link">Perguntas Frequentes</a>
+          <a href="../suporte/contato.html" class="nav-link">Contato</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="content-header">
+        <button class="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+        <nav class="breadcrumb">
+          <span class="breadcrumb-item">Catálogo</span>
+          <span class="breadcrumb-separator">›</span>
+          <span class="breadcrumb-item">Visão Geral</span>
+        </nav>
+      </header>
+
+      <div class="content-body">
+        <h1>Gerenciamento de Catálogo</h1>
+        <p>O catálogo de produtos é uma funcionalidade essencial da plataforma Nexa que permite organizar e apresentar seus produtos de forma profissional via WhatsApp.</p>
+
+        <div class="content-card">
+          <div class="card-header">
+            <h2 class="card-title">📦 O que é o Catálogo?</h2>
+          </div>
+          <div class="card-body">
+            <p>O catálogo é uma ferramenta que permite:</p>
+            <ul>
+              <li><strong>Organizar produtos:</strong> Categorize e organize seus produtos de forma lógica</li>
+              <li><strong>Apresentação profissional:</strong> Mostre seus produtos com imagens e descrições atrativas</li>
+              <li><strong>Facilitar vendas:</strong> Permite que clientes visualizem produtos diretamente no WhatsApp</li>
+              <li><strong>Automatizar respostas:</strong> Configure respostas automáticas com links para produtos</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <div class="card-header">
+            <h2 class="card-title">🚀 Próximos Passos</h2>
+          </div>
+          <div class="card-body">
+            <p>Para começar a usar o catálogo:</p>
+            <ol>
+              <li><a href="acessar-catalogo.html" class="text-green-600 hover:text-green-800">Acessar seu catálogo</a></li>
+              <li><a href="criar-produto.html" class="text-green-600 hover:text-green-800">Criar seu primeiro produto</a></li>
+              <li><a href="editar-produto.html" class="text-green-600 hover:text-green-800">Editar informações dos produtos</a></li>
+              <li><a href="excluir-produto.html" class="text-green-600 hover:text-green-800">Gerenciar produtos obsoletos</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

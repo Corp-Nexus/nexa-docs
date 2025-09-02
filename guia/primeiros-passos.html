@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentação - Primeiros Passos</title>
+  <meta name="description"
+    content="Comprehensive user guide for your SaaS platform with step-by-step instructions and screenshots.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="docs-container">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <h1 class="sidebar-title">Documentação</h1>
+      </div>
+      <div class="sidebar-nav">
+        <div class="nav-section">
+          <div class="nav-section-title">Introdução</div>
+          <a href="../intro/index.html" class="nav-link">Visão Geral</a>
+          <a href="../intro/funcionalidades.html" class="nav-link">Funcionalidades</a>
+          <a href="../intro/planos.html" class="nav-link">Planos e limites</a>
+        </div>
+        <div class="nav-section">
+          <div class="nav-section-title">Guia do Usuário</div>
+          <a href="primeiros-passos.html" class="nav-link active">Primeiros passos</a>
+        </div>
+        <div class="nav-section">
+          <div class="nav-section-title">Catálogo</div>
+          <a href="../catalogo/catalogo.html" class="nav-link">Visão Geral</a>
+          <a href="../catalogo/acessar-catalogo.html" class="nav-link">Acessar seu catálogo</a>
+          <a href="../catalogo/criar-produto.html" class="nav-link">Criar um produto</a>
+          <a href="../catalogo/editar-produto.html" class="nav-link">Editar um produto</a>
+          <a href="../catalogo/excluir-produto.html" class="nav-link">Excluir um produto</a>
+        </div>
+        <div class="nav-section">
+          <div class="nav-section-title">Suporte</div>
+          <a href="../suporte/perguntas-e-respostas.html" class="nav-link">Perguntas Frequentes</a>
+          <a href="../suporte/contato.html" class="nav-link">Contato</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="content-header">
+        <button class="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+        <nav class="breadcrumb">
+          <a href="../intro/index.html" class="breadcrumb-item">Introdução</a>
+          <span class="breadcrumb-separator">›</span>
+          <span class="breadcrumb-item">Primeiros Passos</span>
+        </nav>
+      </header>
+
+      <div class="content-body">
+        <h1>Primeiros Passos</h1>
+        <p>Este guia irá orientá-lo durante o processo de configuração da sua conta e a utilização do Nexa.</p>
+
+        <div class="content-card">
+          <div class="card-header">
+            <h2 class="card-title">Infraestrutura</h2>
+          </div>
+          <div class="card-body">
+            <p>A Infraestrutura por trás do Nexa é robusta e escalável. De forma automática, criaremos um ambiente
+              otimizado para suas operações. Isto inclui o banco de dados, seu catálogo, e os serviços necessários para
+              suportar suas atividades.</p>
+
+            <p>Entretanto, precisamos de algumas horas para configurar e otimizar o seu Agente de Atendimento para que
+              ele esteja pronto para interagir com seus clientes.</p>
+
+            <div class="alert alert-info">
+              <strong>💡 Dica:</strong> Enquanto você espera, você pode preencher o catálogo da sua loja para que o Nexa
+              tenha acesso aos produtos que você vende!
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <div class="card-header">
+            <h2 class="card-title">Passos Iniciais</h2>
+          </div>
+          <div class="card-body">
+            <h3>Etapa 1: Aceitar o convite para seu catálogo</h3>
+            <p>Assim que confirmarmos seu pagamento, será enviado de forma automática um convite para acessar seu
+              catálogo. <br><br> Verifique seu e-mail e clique no link para aceitar o convite.</p><br><br>
+
+            <img src="../assets/convite-catalogo.png" alt="Account Settings Menu" class="content-image"
+              style="object-fit: cover; display: block; margin: 0 auto;">
+            <p class="image-caption">Convite de acesso ao catálogo</p>
+
+            <div class="alert alert-info">
+              <strong>💡 Dica:</strong> Caso não encontre o e-mail, verifique sua pasta de spam.
+            </div>
+
+            <h4>Após criar sua conta no catálogo, você pode <a href="../catalogo/catalogo.html"
+                class="catalog-link">acessar nosso guia</a> de como gerenciar seu catálogo.</h4>
+
+            <h3>Etapa 2: Conecte o Nexa na sua loja</h3>
+            <p>Enviaremos via WhatsApp o <strong>Código QR</strong> que conecta o Nexa à sua loja. Basta escanear o
+              código (utilizando seu aplicativo do WhatsApp) para finalizar a conexão.</p>
+
+
+            <div class="image-grid">
+              <div class="image-container">
+                <img src="../assets/exemplo-qrcode.png" alt="Exemplo de Código QR" class="content-image"
+                  style="object-fit: cover; display: block; margin: 0 auto;">
+                <p class="image-caption">Exemplo de Código QR</p>
+              </div>
+              <div class="image-container">
+                <img src="../assets/exemplo-conectado.png" alt="Security Settings" class="content-image"
+                  style="width: 400px; height: 400px; object-fit: cover; display: block; margin: 0 auto;">
+                <p class="image-caption">Nexa conectado à loja</p>
+              </div>
+            </div>
+
+            <div class="alert alert-warning">
+              <strong>⚠️ Importante:</strong> O Nexa estará conectado ao seu WhatsApp, mas só começará a atender seus clientes quando finalizarmos a configuração.
+              Enviaremos um <strong>aviso</strong> quando tudo estiver pronto.
+            </div>
+
+          </div>
+        </div>
+
+        <div class="content-card">
+          <div class="card-header">
+            <h2 class="card-title">Próximos Passos</h2>
+          </div>
+          <div class="card-body">
+            <h3>Finalização da Configuração</h3>
+            <p>Após seguir todos os passos anteriores, agora é com a gente!</p>
+            <p>Nossa equipe técnica finalizará a configuração e você receberá um aviso quando tudo estiver pronto.</p>
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
