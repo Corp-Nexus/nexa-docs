@@ -219,7 +219,8 @@ body {
 /* Image styles - optimized for screenshots and examples */
 .content-image {
   max-width: 100%;
-  height: auto;
+  width: 400px;
+  height: 250px;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 1.5rem 0;

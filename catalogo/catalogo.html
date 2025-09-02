@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nexa - Catálogo</title>
-  <meta name="description" content="Gerencie seu catálogo de produtos na plataforma Nexa para automatização do WhatsApp.">
+  <meta name="description"
+    content="Gerencie seu catálogo de produtos na plataforma Nexa para automatização do WhatsApp.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
 </head>
+
 <body>
   <div class="docs-container">
     <!-- Sidebar Navigation -->
-   <nav class="sidebar">
+    <nav class="sidebar">
       <div class="sidebar-header">
         <h1 class="sidebar-title">Documentação</h1>
       </div>
@@ -60,34 +62,45 @@
 
       <div class="content-body">
         <h1>Gerenciamento de Catálogo</h1>
-        <p>O catálogo de produtos é uma funcionalidade essencial da plataforma Nexa que permite organizar e apresentar seus produtos de forma profissional via WhatsApp.</p>
+        <p>O catálogo de produtos é uma funcionalidade essencial do Nexa que permite organizar seus produtos de forma
+          visual.</p>
+        <p>A partir dele, seu Agente de IA terá acesso à todas as informações dos produtos, como tamanhos, preços,
+          cores, e principalmente às fotos.</p>
 
         <div class="content-card">
           <div class="card-header">
-            <h2 class="card-title">📦 O que é o Catálogo?</h2>
+            <h2 class="card-title">O que é o Catálogo?</h2>
           </div>
           <div class="card-body">
-            <p>O catálogo é uma ferramenta que permite:</p>
+            <p>Nos bastidores do sistema, o catálogo é um banco de dados não relacional que armazena informações sobre
+              seus produtos.</p>
+            <p>Nele, você pode:</p>
             <ul>
-              <li><strong>Organizar produtos:</strong> Categorize e organize seus produtos de forma lógica</li>
-              <li><strong>Apresentação profissional:</strong> Mostre seus produtos com imagens e descrições atrativas</li>
-              <li><strong>Facilitar vendas:</strong> Permite que clientes visualizem produtos diretamente no WhatsApp</li>
-              <li><strong>Automatizar respostas:</strong> Configure respostas automáticas com links para produtos</li>
+              <li><strong>Organizar produtos:</strong> Categorize e organize seus produtos de forma lógica e visual.
+              </li>
+              <li><strong>Adicionar informações:</strong> Inclua detalhes como descrições, preços e imagens.</li>
             </ul>
+            <div class="alert alert-warning">
+              <strong>⚠️ Atenção:</strong> Para que o Nexa possa responder sobre seus produtos, seu catálogo deve estar devidamente preenchido. É a partir dele que o Nexa obtém as informações necessárias.
+            </div>
           </div>
         </div>
 
         <div class="content-card">
           <div class="card-header">
-            <h2 class="card-title">🚀 Próximos Passos</h2>
+            <h2 class="card-title">Próximos Passos</h2>
           </div>
           <div class="card-body">
             <p>Para começar a usar o catálogo:</p>
             <ol>
-              <li><a href="acessar-catalogo.html" class="text-green-600 hover:text-green-800">Acessar seu catálogo</a></li>
-              <li><a href="criar-produto.html" class="text-green-600 hover:text-green-800">Criar seu primeiro produto</a></li>
-              <li><a href="editar-produto.html" class="text-green-600 hover:text-green-800">Editar informações dos produtos</a></li>
-              <li><a href="excluir-produto.html" class="text-green-600 hover:text-green-800">Gerenciar produtos obsoletos</a></li>
+              <li><a href="acessar-catalogo.html" class="catalog-link">Acessar seu catálogo</a>
+              </li>
+              <li><a href="criar-produto.html" class="catalog-link">Criar seu primeiro
+                  produto</a></li>
+              <li><a href="editar-produto.html" class="catalog-link">Editar informações dos
+                  produtos</a></li>
+              <li><a href="excluir-produto.html" class="catalog-link">Gerenciar produtos
+                  obsoletos</a></li>
             </ol>
           </div>
         </div>
@@ -97,4 +110,5 @@
 
   <script src="../js/script.js"></script>
 </body>
+
 </html>
