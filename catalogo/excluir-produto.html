@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
 </head>
+
 <body>
   <div class="docs-container">
     <!-- Sidebar Navigation -->
-   <nav class="sidebar">
+    <nav class="sidebar">
       <div class="sidebar-header">
         <h1 class="sidebar-title">Documentação</h1>
       </div>
@@ -64,48 +65,110 @@
 
         <div class="content-card">
           <div class="card-header">
-            <h2 class="card-title">🗑️ Como Excluir um Produto</h2>
+            <h2 class="card-title">Contexto</h2>
           </div>
           <div class="card-body">
-            <h3>Passo 1: Localizar o Produto</h3>
-            <p>Acesse o catálogo e encontre o produto que deseja excluir.</p>
-            
-            <h3>Passo 2: Abrir Opções</h3>
-            <p>Clique no ícone de três pontos (...) ou no menu de ações do produto.</p>
-            
-            <h3>Passo 3: Selecionar Excluir</h3>
-            <p>Escolha a opção "Excluir" ou "Remover" do menu.</p>
-            
-            <h3>Passo 4: Confirmar Exclusão</h3>
-            <p>Uma janela de confirmação aparecerá. Clique em "Confirmar" para prosseguir.</p>
-            
+            <p>Como mencionado antes, o catálogo do Nexa funciona como um <strong>banco de dados</strong> nos
+              bastidores. Isto quer dizer que, apesar da visualização e interação ser facilitada via interface, cada
+              produto da sua loja ocupa uma "linha" em um banco de dados.</p>
+            <p>Para excluirmos um produto, precisamos localizar a linha correspondente no <strong>banco de
+                dados</strong> através de uma visualização em <strong>forma de tabela.</strong></p>
+            <p></p>
+
             <div class="alert alert-warning">
-              <strong>⚠️ Atenção:</strong> A exclusão é permanente e não pode ser desfeita.
+              <strong>⚠️ Atenção:</strong> Apesar de simples, seguir estes passos é <strong>crucial</strong> para
+              garantir que a exclusão seja feita corretamente, e seu banco de dados permaneça consistente.
             </div>
           </div>
         </div>
 
         <div class="content-card">
           <div class="card-header">
-            <h2 class="card-title">🔄 Alternativas à Exclusão</h2>
+            <h2 class="card-title">Como Excluir um Produto</h2>
           </div>
           <div class="card-body">
-            <p>Antes de excluir, considere estas alternativas:</p>
-            <ul>
-              <li><strong>Desativar produto:</strong> Mude o status para "Inativo"</li>
-              <li><strong>Arquivar:</strong> Mova para uma pasta de arquivo</li>
-              <li><strong>Atualizar informações:</strong> Modifique preços ou descrições</li>
-            </ul>
-            
-            <div class="alert alert-info">
-              <strong>💡 Dica:</strong> Produtos desativados não aparecem para clientes, mas podem ser reativados facilmente.
+            <br>
+            <p>Vamos tomar como exemplo o produto do <a href="editar-produto.html" class="catalog-link">guia
+                passado</a>, a calça de R$ 699,90.</p>
+            <br><br>
+
+            <h3>Passo 1: Mudar a visualização do catálogo para "Tabela"</h3>
+            <p>Com seu catálogo aberto, localize a opção <strong>"Catálogo"</strong>, na parte superior esquerda, e
+              clique nela.</p>
+
+            <p>Após clicar, um menu será aberto. Neste menu, clique na opção <strong>"Banco de Dados"</strong></p>
+            <div class="image-grid">
+              <div class="image-container"
+                style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <img src="../assets/catalogo-view.png" alt="Visualização do catálogo de produtos" class="content-image">
+                <p class="image-caption">Opção "Catálogo"</p>
+              </div>
+              <div class="image-container"
+                style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <img src="../assets/bd-view.png" alt="Organização de produtos" class="content-image"
+                  style="width: 400px; height: 250px; object-fit: cover; display: block; margin: 0 auto;">
+                <p class="image-caption">Visualização "Banco de Dados"</p>
+              </div>
+            </div>
+
+            <h3>Passo 2: Identificar o produto</h3>
+            <p>Após clicar em <strong>Banco de Dados</strong> no último passo, você verá uma lista de produtos em
+              formato de tabela.</p>
+            <p>Cada produto de seu catálogo é uma <strong>linha</strong> na tabela do banco de dados. Localize a linha
+              correspondente ao produto que deseja excluir.</p>
+            <p>Neste caso, vamos excluir a calça criada anteriormente:</p>
+            <img src="../assets/bd-view-product.png" alt="Table View" class="content-image"
+              style="width: 75%; height: 100%; ">
+            <p class="image-caption" style="text-align: left; ">Visualização em forma de tabela</p>
+            <br><br>
+
+
+            <h3>Passo 3: Excluir o produto</h3>
+            <p>Com o mouse em cima do produto, clique com o botão direito.</p>
+            <p>Em seguida, escolha a opção "Delete Row" do menu.</p>
+            <img src="../assets/delete-row.png" alt="Delete row" class="content-image"
+              style="height: 100%; width: 50%; ">
+            <p class="image-caption" style="text-align: left; ">Menu de exclusão</p>
+            <br><br>
+
+            <h3>Passo 4: Confirmar Exclusão</h3>
+            <p>A linha desaparecerá do banco de dados, confirmando que a exclusão foi realizada com sucesso.</p>
+            <p>Para retornar ao seu catálogo, clique em "Banco de Dados" na parte superior esquerda da tela.</p>
+            <p>Após clicar, um menu será aberto. Neste menu, clique na opção "Catálogo".</p>
+            <div class="image-grid">
+              <div class="image-container"
+                style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <img src="../assets/view-button.png" alt="Visualização do catálogo de produtos" class="content-image"
+                  style="width: 100%; height: 70%;">
+                <p class="image-caption">Opção "Banco de Dados"</p>
+              </div>
+              <div class="image-container"
+                style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <img src="../assets/view-button-catalog.png" alt="Organização de produtos" class="content-image"
+                  style="width: 100%; height: 70%; object-fit: cover; display: block; margin: 0 auto;">
+                <p class="image-caption">Visualização "Catálogo". Clique nela para retornar ao catálogo</p>
+              </div>
+            </div>
+            <br>
+            <h4>Após clicar em "Catálogo", você será levado de volta à visualização do catálogo de produtos.</h4>
+          </div>
+
+          <div class="content-card">
+            <div class="card-header">
+              <h2 class="card-title">Alternativas à Exclusão</h2>
+            </div>
+            <div class="card-body">
+              <p>Caso queira apenas editar uma informação, você pode clicar no produto e editar estas informações.</p>
+              <p>Você pode conferir um guia completo sobre edição de produtos <a href="editar-produto.html"
+                  class="catalog-link">clicando aqui.</a></p>
+
             </div>
           </div>
         </div>
-      </div>
     </main>
   </div>
 
   <script src="../js/script.js"></script>
 </body>
+
 </html>
