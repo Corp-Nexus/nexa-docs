@@ -7,7 +7,6 @@ class DocumentationApp {
     this.mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     this.navLinks = document.querySelectorAll('.nav-link');
     this.currentPage = this.getCurrentPage();
-    
     this.init();
   }
   
@@ -18,7 +17,40 @@ class DocumentationApp {
     this.setupSmoothScrolling();
     this.highlightCurrentPage();
     this.setupKeyboardNavigation();
+    this.setupFAQDropdown();
   }
+
+  setupFAQDropdown() {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const item = btn.parentElement;
+        const answer = item.querySelector('.faq-answer');
+        // Close others
+        document.querySelectorAll('.faq-item').forEach(i => {
+          if (i !== item) {
+            i.classList.remove('active');
+            const a = i.querySelector('.faq-answer');
+            if (a) {
+              a.style.maxHeight = null;
+            }
+          }
+        });
+        // Toggle current
+        item.classList.toggle('active');
+        if (item.classList.contains('active')) {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        } else {
+          answer.style.maxHeight = null;
+        }
+      });
+    });
+    // On page load, reset all answers
+    document.querySelectorAll('.faq-answer').forEach(a => {
+      a.style.maxHeight = null;
+    });
+  }
+  // ...existing code...
   
   getCurrentPage() {
     const path = window.location.pathname;
