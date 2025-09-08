@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  nexa-docs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nexa-docs
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - TZ=America/Sao_Paulo
+    volumes:
+      # Volume para logs (opcional)
+      - ./logs:/app/logs
+    networks:
+      - nexa-docs-network
+    labels:
+      - "traefik.enable=false"  # Caso use Traefik no futuro
+      - "com.docker.compose.project=nexa-docs"
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  nexa-docs-network:
+    driver: bridge
+    name: nexa-docs-network
+
+volumes:
+  logs:
+    driver: local
