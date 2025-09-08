@@ -27,12 +27,12 @@ RUN addgroup -g 1001 -S nodejs && \
 # Mudar para usuário não-root
 USER nextjs
 
-# Expor a porta 3000
-EXPOSE 3000
+# Expor a porta 3010
+EXPOSE 3010
 
 # Comando de saúde para verificar se o container está funcionando
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-    CMD wget --no-verbose --tries=1 --spider http://localhost:3000/ || exit 1
+    CMD wget --no-verbose --tries=1 --spider http://localhost:3010/ || exit 1
 
 # Comando para iniciar o servidor
 CMD ["npm", "start"]

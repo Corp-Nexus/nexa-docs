@@ -4,8 +4,8 @@
   "description": "Documentação da plataforma Nexa - Site estático servido via http-server",
   "main": "intro/index.html",
   "scripts": {
-    "start": "http-server . -p 3000 -a 0.0.0.0 --cors -c-1 -d false",
-    "dev": "http-server . -p 3000 -a 0.0.0.0 --cors -c-1 -d false -o",
+    "start": "http-server . -p 3010 -a 0.0.0.0 --cors -c-1 -d false",
+    "dev": "http-server . -p 3010 -a 0.0.0.0 --cors -c-1 -d false -o",
     "build": "echo 'Site estático - nenhum build necessário'",
     "test": "echo 'Nenhum teste configurado'"
   },

@@ -90,8 +90,8 @@ show_status() {
     docker-compose ps
     echo ""
     log "Testando conectividade..."
-    if curl -s -o /dev/null -w "%{http_code}" http://localhost:3000 | grep -q "200"; then
-        success "Site está acessível em http://localhost:3000"
+    if curl -s -o /dev/null -w "%{http_code}" http://localhost:3010 | grep -q "200"; then
+        success "Site está acessível em http://localhost:3010"
     else
         warning "Site pode não estar acessível ainda. Verifique os logs."
     fi
